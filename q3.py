@@ -22,7 +22,7 @@ class List(list):
             current = super().__getitem__(args[0][0])
             for i in args[0][1:-1]:
                 current = current[i]
-            current[args[0][-1]] = val  # getting to one dimensional list and using regular [] operator :)
+            current[args[0][-1]] = val  
             return
         except:  # if regular use original setter:
             super().__setitem__(args[0], val)
